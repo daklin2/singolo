@@ -54,6 +54,16 @@ header nav {
   float: right;
 }
 
+header nav .el{
+  transition: 0.2s;
+}
+
+header nav .el:hover{
+  cursor: pointer;
+  opacity: 0.4;
+  transition: 0.2s;
+}
+
 header nav .dot {
   color: #424657;
 }
@@ -86,6 +96,7 @@ main .slider .prev {
   position: absolute;
   top: 286px;
   left: 40px;
+  transition: 0.2s;
 }
 
 main .slider .prev span:nth-child(1) {
@@ -109,12 +120,19 @@ main .slider .prev span:nth-child(2) {
   margin-top: 11px;
 }
 
+main .slider .prev:hover{
+  cursor: pointer;
+  opacity: 0.4;
+  transition: 0.2s;
+}
+
 main .slider .next {
   height: 27px;
   width: 16px;
   position: absolute;
   top: 286px;
   right: 42px;
+  transition: 0.2s;
 }
 
 main .slider .next span:nth-child(1) {
@@ -136,6 +154,12 @@ main .slider .next span:nth-child(2) {
   border-radius: 3px;
   transform: rotate(-45deg);
   margin-top: 11px;
+}
+
+main .slider .next:hover{
+  cursor: pointer;
+  opacity: 0.4;
+  transition: 0.2s;
 }
 
 main .slider .phones .vertical {
