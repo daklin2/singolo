@@ -9,10 +9,14 @@
   padding: 0;
 }
 
+body {
+  width: 1020px;
+}
+
 header {
   position: relative;
   height: 95px;
-  width: 1020px;
+  width: inherit;
   background-color: #2d303a;
 }
 
@@ -54,6 +58,85 @@ header .bottom-line {
   bottom: 0px;
 }
 
+main {
+  height: 1100px;
+  width: inherit;
+}
+main .slider {
+  position: relative;
+  height: 600px;
+  width: inherit;
+  background-color: #f06c64;
+}
 
+main .slider .prev {
+  height: 27px;
+  width: 16px;
+  position: absolute;
+  top: 286px;
+  left: 40px;
+}
 
+main .slider .prev span:nth-child(1) {
+  position: absolute;
+  height: 2px;
+  width: inherit;
+  border: 2px solid #ca4549;
+  background-color: #ca4549;
+  border-radius: 3px;
+  transform: rotate(-45deg);
+}
+
+main .slider .prev span:nth-child(2) {
+  position: absolute;
+  height: 2px;
+  width: inherit;
+  border: 2px solid #ca4549;
+  background-color: #ca4549;
+  border-radius: 3px;
+  transform: rotate(45deg);
+  margin-top: 11px;
+}
+
+main .slider .next {
+  height: 27px;
+  width: 16px;
+  position: absolute;
+  top: 286px;
+  right: 42px;
+}
+
+main .slider .next span:nth-child(1) {
+  position: absolute;
+  height: 2px;
+  width: inherit;
+  border: 2px solid #ca4549;
+  background-color: #ca4549;
+  border-radius: 3px;
+  transform: rotate(45deg);
+}
+
+main .slider .next span:nth-child(2) {
+  position: absolute;
+  height: 2px;
+  width: inherit;
+  border: 2px solid #ca4549;
+  background-color: #ca4549;
+  border-radius: 3px;
+  transform: rotate(-45deg);
+  margin-top: 11px;
+}
+
+main .slider .phones .vertical {
+  position: absolute;
+  top: 53px;
+  left: 112px;
+}
+
+main .slider .phones .horizontal {
+  position: absolute;
+  top: 174px;
+  right: 111px;
+
+}
 
