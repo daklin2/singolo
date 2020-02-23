@@ -2,7 +2,18 @@
   font-family: "lato-bold";
   src: url("assets/lato/Lato-Bold.ttf");
 }
-
+@font-face {
+  font-family: "lato-black";
+  src: url("assets/lato/Lato-black.ttf");
+}
+@font-face {
+  font-family: "lato-light";
+  src: url("assets/lato/Lato-Light.ttf");
+}
+@font-face {
+  font-family: "lato-regular";
+  src: url("assets/lato/Lato-Regular.ttf");
+}
 
 * {
   margin: 0;
@@ -140,11 +151,218 @@ main .slider .phones .horizontal {
 
 }
 
-main .bottom-line {
+main .slider .bottom-line {
   position: absolute;
   height: 7px;
   width: inherit;
   background-color: #ea676b;
   bottom: 0px;
+}
+
+main .services {
+  height: 500px;
+  width: inherit;
+  background-color: #f2f2f2;
+
+}
+
+main .services h1 {
+  padding: 59px 0 0 40px;
+  font-family: "lato-black";
+  color: #666d89;
+  font-size: 30px;
+}
+
+main .services p {
+  padding: 20px 0 0 40px;
+  font-family: "lato-light";
+  color: #666d89;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: -0.04px;
+}
+
+main .services .advantages {
+  padding: 25px 0 0 30px;
+  display: grid;
+  grid-template-columns: 320px 320px 320px;
+  grid-template-rows: 125px 125px;
+  grid-template-areas:
+      "a c e"
+      "b d f";
+}
+
+main .services .advantages .item-1 {
+  grid-area: a;
+}
+
+main .services .advantages .item-1 picture {
+  position: absolute;
+  top: 914px;
+  left: 40px;
+}
+
+main .services .advantages .item-1 h3 {
+  position: absolute;
+  font-family: "lato-black";
+  color: #767e9e;
+  top: 911px;
+  left: 118px;
+}
+
+main .services .advantages .item-1 p {
+  position: absolute;
+  font-family: "lato-regular";
+  font-size: 12px;
+  top: 920px;
+  left: 80px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #666d89;
+}
+
+main .services .advantages .item-2 {
+  grid-area: b;
+}
+
+main .services .advantages .item-2 picture {
+  position: absolute;
+  top: 1037px;
+  left: 40px;
+}
+
+main .services .advantages .item-2 h3 {
+  position: absolute;
+  font-family: "lato-black";
+  color: #767e9e;
+  top: 1034px;
+  left: 118px;
+}
+
+main .services .advantages .item-2 p {
+  position: absolute;
+  font-family: "lato-regular";
+  font-size: 12px;
+  top: 1043px;
+  left: 80px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #666d89;
+}
+
+main .services .advantages .item-3 {
+  grid-area: c;
+}
+
+main .services .advantages .item-3 picture {
+  position: absolute;
+  top: 914px;
+  left: 359px;
+}
+
+main .services .advantages .item-3 h3 {
+  position: absolute;
+  font-family: "lato-black";
+  color: #767e9e;
+  top: 911px;
+  left: 438px;
+}
+
+main .services .advantages .item-3 p {
+  position: absolute;
+  font-family: "lato-regular";
+  font-size: 12px;
+  top: 920px;
+  left: 400px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #666d89;
+}
+
+main .services .advantages .item-4 {
+  grid-area: d;
+}
+
+main .services .advantages .item-4 picture {
+  position: absolute;
+  top: 1037px;
+  left: 359px;
+}
+
+main .services .advantages .item-4 h3 {
+  position: absolute;
+  font-family: "lato-black";
+  color: #767e9e;
+  top: 1034px;
+  left: 438px;
+}
+
+main .services .advantages .item-4 p {
+  position: absolute;
+  font-family: "lato-regular";
+  font-size: 12px;
+  top: 1043px;
+  left: 400px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #666d89;
+}
+
+main .services .advantages .item-5 {
+  grid-area: e;
+}
+
+main .services .advantages .item-5 picture {
+  position: absolute;
+  top: 914px;
+  left: 679px;
+}
+
+main .services .advantages .item-5 h3 {
+  position: absolute;
+  font-family: "lato-black";
+  color: #767e9e;
+  top: 911px;
+  left: 760px;
+}
+
+main .services .advantages .item-5 p {
+  position: absolute;
+  font-family: "lato-regular";
+  font-size: 12px;
+  top: 920px;
+  left: 720px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #666d89;
+}
+
+main .services .advantages .item-6 {
+  grid-area: e;
+}
+
+main .services .advantages .item-6 picture {
+  position: absolute;
+  top: 1037px;
+  left: 679px;
+}
+
+main .services .advantages .item-6 h3 {
+  position: absolute;
+  font-family: "lato-black";
+  color: #767e9e;
+  top: 1034px;
+  left: 760px;
+}
+
+main .services .advantages .item-6 p {
+  position: absolute;
+  font-family: "lato-regular";
+  font-size: 12px;
+  top: 1043px;
+  left: 720px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #666d89;
 }
 
