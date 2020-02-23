@@ -140,3 +140,11 @@ main .slider .phones .horizontal {
 
 }
 
+main .bottom-line {
+  position: absolute;
+  height: 7px;
+  width: inherit;
+  background-color: #ea676b;
+  bottom: 0px;
+}
+
