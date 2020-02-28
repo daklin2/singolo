@@ -53,7 +53,6 @@ header .logo span {
 header nav {
   font-family: "lato-bold";
   font-size: 12px;
-  color: #ffffff;
   float: right;
 }
 
@@ -70,9 +69,6 @@ header nav ul .el{
   transition: 0.2s;
 }
 
-header nav ul .el:first-child {
-  color: #ea676b;
-}
 header nav ul .el:not(:last-child)::after {
   content: "\00B7";
   display: block;
@@ -82,7 +78,19 @@ header nav ul .el:not(:last-child)::after {
   color: #494e62;
 }
 
-header nav .el:hover{
+header nav ul .el a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  height: 100%;
+  color: #ffffff;
+}
+
+header nav ul .el:first-child a {
+  color: #ea676b;
+}
+
+header nav .el a:hover{
   cursor: pointer;
   opacity: 0.4;
   transition: 0.2s;
