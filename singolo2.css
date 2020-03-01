@@ -181,6 +181,10 @@ main .aboutUs .contain .people .person .name {
   overflow: hidden;
 }
 
+main .aboutUs .contain .people .person .name:nth-child(2) {
+  letter-spacing: -0.12px;
+}
+
 main .aboutUs .contain .people .person .description {
   padding-bottom: 13px;
   font-family: "lato-regular";
@@ -191,6 +195,10 @@ main .aboutUs .contain .people .person .description {
 
 main .aboutUs .contain .people .person:nth-child(1) .description {
   word-spacing: -1.2px;
+}
+
+main .aboutUs .contain .people .person:nth-child(2) .description {
+  word-spacing: 1.1px;
 }
 
 main .aboutUs .contain .people .person .social {
