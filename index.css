@@ -624,7 +624,7 @@ main .aboutUs .contain .people .person .social {
   display: grid;
   grid-template-columns: repeat(4, 32px);
   grid-template-rows: 32px;
-  grid-gap: 8.3px;
+  grid-gap: 8px;
   list-style: none;
 }
 main .aboutUs .contain .people .person:last-child .social {
