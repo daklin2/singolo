@@ -178,7 +178,6 @@ main .aboutUs .contain .people .person .name {
   font-family: "lato-black";
   font-size: 18px;
   line-height: 18px;
-  font-weight: 900;
   overflow: hidden;
 }
 
@@ -188,6 +187,10 @@ main .aboutUs .contain .people .person .description {
   font-size: 12px;
   line-height: 21.56px;
   color: #767e9e;
+}
+
+main .aboutUs .contain .people .person:nth-child(1) .description {
+  word-spacing: -1.2px;
 }
 
 main .aboutUs .contain .people .person .social {
