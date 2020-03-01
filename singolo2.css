@@ -23,7 +23,6 @@ body {
 .wrapper {
   position: relative;
   max-width: 1020px;
-  padding: 0 0px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -86,20 +85,20 @@ main .portfolio .contain .filter button:hover {
 main .portfolio .contain .filter button:nth-child(1) {
   border-color: rgb(197, 197, 197);
   color: #dedede;
-  padding: 0px 7px;
+  padding: 0 7px;
   margin-left: 1px;
 }
 main .portfolio .contain .filter button:nth-child(2) {
-  padding: 0px 6px;
+  padding: 0 6px;
 }
 main .portfolio .contain .filter button:nth-child(3) {
-  padding: 0px 5px;
+  padding: 0 5px;
 }
 main .portfolio .contain .filter button:nth-child(4) {
-  padding: 0px 6px;
+  padding: 0 6px;
 }
 
-main .portfolio ul {
+main .portfolio .contain ul {
   width: 944px;
   height: 601px;
   padding: 0;
@@ -115,4 +114,113 @@ main .portfolio ul {
 
 main .portfolio ul li picture {
   display: block;
+}
+
+main .aboutUs {
+  background-color: #f2f2f2;
+  padding-bottom: 67px;
+  border-bottom: 6px solid #ffffff;
+}
+
+main .aboutUs .contain {
+  padding: 62px 0 0 40px;
+}
+
+main .aboutUs .contain .header {
+  line-height: 30px;
+  padding-bottom: 11px;
+}
+
+main .aboutUs .contain .header h2 {
+  font-family: "lato-black";
+  font-size: 30px;
+  letter-spacing: -0.1px;
+  color: #666d89;
+  padding-bottom: 21px;
+}
+
+main .aboutUs .contain .header p {
+  font-family: "lato-light";
+  font-size: 18px;
+  word-spacing: -0.3px;
+  color: #767e9e;
+}
+
+main .aboutUs .contain .people {
+  width: 940px;
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 19px;
+  list-style: none;
+}
+
+main .aboutUs .contain .people .person {
+  height: 443px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #666d89;
+}
+
+main .aboutUs .contain .people .person:nth-child(2) {
+  padding-right: 2px;
+}
+
+main .aboutUs .contain .people .person img {
+  width: 300px;
+  height: 300px;
+}
+
+main .aboutUs .contain .people .person .name {
+  height: 18px;
+  padding-top: 6px;
+  font-family: "lato-black";
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 900;
+  overflow: hidden;
+}
+
+main .aboutUs .contain .people .person .description {
+  padding-bottom: 13px;
+  font-family: "lato-regular";
+  font-size: 12px;
+  line-height: 21.56px;
+  color: #767e9e;
+}
+
+main .aboutUs .contain .people .person .social {
+  padding-left: 1px;
+  display: grid;
+  grid-template-columns: repeat(4, 32px);
+  grid-template-rows: 32px;
+  grid-gap: 8.3px;
+  list-style: none;
+}
+main .aboutUs .contain .people .person:last-child .social {
+  padding: 0;
+}
+
+main .aboutUs .contain .people .person .social li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #767e9e;
+  border-radius: 50%;
+  transition: 0.2s;
+  fill: #767e9e;
+}
+
+main .aboutUs .contain .people .person .social li a:hover {
+  background-color: #2d303a;
+  transition: 0.2s;
+}
+
+main .aboutUs .contain .people .person .social li a:hover svg {
+  fill: white;
+  transition: 0.2s;
 }
