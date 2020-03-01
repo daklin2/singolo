@@ -181,7 +181,7 @@ main .aboutUs .contain .people .person .name {
   overflow: hidden;
 }
 
-main .aboutUs .contain .people .person .name:nth-child(2) {
+main .aboutUs .contain .people .person:nth-child(2) .name {
   letter-spacing: -0.12px;
 }
 
