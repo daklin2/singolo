@@ -652,7 +652,7 @@ main .getQuote .formSubmit .contact-information .location::before {
 }
 
 main .getQuote .formSubmit .contact-information .location::before {
-  background-image: url("assets/getQuote/ico-contact-location.svg");
+  background-image: url("assets/GetQuote/ico-contact-location.svg");
   background-size: 7px;
   background-position: 3px;
 }
@@ -661,13 +661,13 @@ main .getQuote .formSubmit .contact-information .tel{
   padding-bottom: 11px;
 }
 main .getQuote .formSubmit .contact-information .tel::before {
-  background-image: url("assets/getQuote/ico-contact-tel.svg");
+  background-image: url("assets/GetQuote/ico-contact-tel.svg");
   background-size: 11px;
   background-position: 1px;
 }
 
 main .getQuote .formSubmit .contact-information .email::before {
-  background-image: url("assets/getQuote/ico-contact-email.svg");
+  background-image: url("assets/GetQuote/ico-contact-email.svg");
   background-size: 13px;
   background-position: 1px;
 }
