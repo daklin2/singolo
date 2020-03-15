@@ -1,3 +1,5 @@
+https://daklin2.github.io/singolo/
+
 # singolo
 Сверстать страницу согласно макету:
 
