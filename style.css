@@ -157,8 +157,17 @@ main .slider {
   position: relative;
   height: 600px;
   width: inherit;
-  background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
+  background-color: #f06c64;
+}
+main .red {
+  background-color: #f06c64;
+  border-color: #ea676b;
+}
+
+main .green {
+  background-color: #648BF0;
+  border-color: #648BF0;
 }
 
 main .slider .prev {
@@ -295,6 +304,10 @@ main .slider .phones .phone_horizontal .phone__screen {
 main .slider .phones .phone_horizontal .phone__shadow {
   transform: scaleX(-1);
   top: -26px;
+}
+
+main .slider .phone img {
+  padding: 46px 260px;
 }
 
 main .slider .bottom-line {
