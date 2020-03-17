@@ -14,18 +14,18 @@
       <h1 class="logo">SINGOLO<span>*</span></h1>
       <nav>
         <ul id="nav">
-          <li class="el"><a class="active_nav" href="#home">HOME</a></li>
-          <li class="el"><a href="#services">SERVICES</a></li>
-          <li class="el"><a href="#portfolio">PORTFOLIO</a></li>
-          <li class="el"><a href="#about">ABOUT</a></li>
-          <li class="el"><a href="#contact">CONTACT</a></li>
+          <li class="el"><a id="js-home" href="#home">HOME</a></li>
+          <li class="el"><a id="js-services" href="#services">SERVICES</a></li>
+          <li class="el"><a id="js-portfolio" href="#portfolio">PORTFOLIO</a></li>
+          <li class="el"><a id="js-about" href="#about">ABOUT</a></li>
+          <li class="el"><a id="js-contact" href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </div>
   </div>
 </header>
 <main>
-  <section id="home" class="slider">
+  <section id="home" class="slider" data-anchor="js-home">
     <div class="wrapper">
       <div class="arrow prev"><span></span><span></span></div>
       <div class="arrow next"><span></span><span></span></div>
@@ -44,7 +44,7 @@
     </div>
   </section>
 
-  <section id="services" class="services">
+  <section id="services" class="services" data-anchor="js-services">
     <div class="wrapper">
       <div class="contain">
         <div class="header">
@@ -113,7 +113,7 @@
     </div>
   </section>
 
-  <section id="portfolio" class="portfolio">
+  <section id="portfolio" class="portfolio" data-anchor="js-portfolio">
     <div class="wrapper">
       <div class="contain">
         <div class="header">
@@ -170,7 +170,7 @@
     </div>
   </section>
 
-  <section id="about" class="aboutUs">
+  <section id="about" class="aboutUs" data-anchor="js-about">
     <div class="wrapper">
       <div class="contain">
         <div class="header"w>
@@ -218,7 +218,7 @@
     </div>
   </section>
 
-  <section id="contact" class="getQuote">
+  <section id="contact" class="getQuote" data-anchor="js-contact">
     <div class="wrapper">
       <div class="contain">
         <div class="header">

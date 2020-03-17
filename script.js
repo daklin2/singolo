@@ -1,13 +1,23 @@
-const switchNav = () => {
-  const nav = document.getElementById('nav');
-  nav.addEventListener('click', event => {
-    nav.querySelectorAll('a').forEach(item => {
-      item.classList.remove('active_nav');
+const navigation = () => {
+  function checkLocation() {
+    let currentItem = anchors[0];
+    anchors.forEach((el) => {
+      const elTop = el.getBoundingClientRect().top;
+      if (elTop < window.innerHeight/10) currentItem = el;
     });
-    event.target.classList.add('active_nav');
+    currentNavigationItem = document.getElementById(`${currentItem.dataset.anchor}`);
+    currentNavigationItem.classList.add('active_nav');
+  }
+
+  const anchors = document.querySelectorAll('section');
+  let currentNavigationItem;
+
+  checkLocation();
+  window.addEventListener('scroll', () => {
+    currentNavigationItem.classList.remove('active_nav');
+    checkLocation();
   });
 }
-
 
 const switchSlide = () => {
   const slider_slidesBgcolor = {
@@ -87,8 +97,11 @@ const portfolio_containerOfItems = document.querySelector('.portfolio__works');
 
 const portfolio_filterTags = document.getElementById('filter');
 
-switchNav();
+navigation();
 switchScreen();
 switchSlide();
-switchTags()
-tagClick()
+switchTags();
+tagClick();
+
+
+
