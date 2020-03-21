@@ -1,15 +1,15 @@
 class Slider {
-  constructor(section) {
+  constructor (section) {
     this.items = section.querySelectorAll('.slide_item');
     this.currentItem = 0;
     this.isEnable = true;
   }
 
-  changeCurrentItem(i) {
+  changeCurrentItem (i) {
     this.currentItem = (i + this.items.length) % this.items.length;
   }
 
-  hideItem(direct) {
+  hideItem (direct) {
     this.isEnable = false;
     this.items[this.currentItem].classList.add(direct);
     this.items[this.currentItem].addEventListener('animationend', event => {
@@ -17,7 +17,7 @@ class Slider {
     })
   }
 
-  showItem(direct) {
+  showItem (direct) {
     this.items[this.currentItem].classList.add('next', direct);
     this.items[this.currentItem].addEventListener('animationend', event => {
       event.target.classList.remove('next', direct);
@@ -26,13 +26,13 @@ class Slider {
     })
   }
 
-  prevItem(i) {
+  prevItem (i) {
     this.hideItem('to_right');
     this.changeCurrentItem(i - 1);
     this.showItem('from_left');
   }
 
-  nextItem(i) {
+  nextItem (i) {
     this.hideItem('to_left');
     this.changeCurrentItem(i + 1);
     this.showItem('from_right');
@@ -78,8 +78,8 @@ class Modal {
 
 const navigation = () => {
   function checkLocation () {
-    let currentItem = anchors[0];
-    anchors.forEach((el) => {
+    let currentItem = anchors_blocks[0];
+    anchors_blocks.forEach((el) => {
       const elTop = el.getBoundingClientRect().top;
       if (elTop < window.innerHeight/10) currentItem = el;
     });
@@ -87,8 +87,20 @@ const navigation = () => {
     currentNavigationItem.classList.add('active_nav');
   }
 
-  const anchors = document.querySelectorAll('section');
+  const anchors_blocks = document.querySelectorAll('section');
+  const anchors_links = [...document.querySelectorAll('header a[href*="#"]')]
   let currentNavigationItem;
+
+  anchors_links.forEach(anchor => {
+    anchor.addEventListener('click', event => {
+      event.preventDefault()
+      const blockID = anchor.getAttribute('href').substr(1);
+      document.getElementById(blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    })
+  });
 
   checkLocation ();
   window.addEventListener('scroll', () => {
@@ -199,6 +211,4 @@ switchScreen();
 switchTags();
 tagClick();
 getQuote_modal();
-
-
 
