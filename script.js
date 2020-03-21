@@ -64,7 +64,7 @@ class Modal {
   init (message) {
     this.form.addEventListener('submit', event => {
       event.preventDefault();
-      let text = '<p>Письмо отправлено</p>' + message['message'].map(obj => this.formValue(obj)).join('');
+      let text = '<p>The letter was sent</p>' + message['message'].map(obj => this.formValue(obj)).join('');
       this.message_container.innerHTML = text;
       this.show();
     })
