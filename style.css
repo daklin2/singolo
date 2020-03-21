@@ -515,6 +515,7 @@ main .portfolio .contain .filter button {
   font-size: 12px;
   transition: .27s ease-out;
   font-family: "lato-regular";
+  user-select: none;
 }
 
 main .portfolio .contain .filter button:hover {
