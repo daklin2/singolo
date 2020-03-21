@@ -112,6 +112,7 @@ const navigation = () => {
 
 const switchSlide = () => {
   const slider_fullSection = document.querySelector(".slider");
+  const slider_arrows = document.querySelectorAll(".slider .arrow");
   const slider = new Slider(slider_fullSection);
   const slider_arrowBgcolor = {
     0: "red",
@@ -151,15 +152,22 @@ const switchScreen = () => {
 
 
 const switchTags = () => {
-  portfolio_filterTags.addEventListener('click', event => {
-    if(!event.target.classList.contains("active_filter")) {
-      let portfolioPictures = [...portfolio_containerOfItems.querySelectorAll(".portfolio_picture")];
-      portfolioPictures.push(portfolioPictures.shift());
-      portfolioPictures.forEach( picture => portfolio_containerOfItems.append(picture) );
-    }
+  const portfolio_containerOfItems = document.querySelector('.portfolio__works');
+  const portfolio_filterTags = document.getElementById('filter');
 
-    portfolio_filterTags.querySelectorAll("button").forEach(item => item.classList.remove('active_filter'));
-    event.target.classList.add('active_filter');
+  portfolio_filterTags.querySelectorAll("button").forEach(button => {
+    button.addEventListener('click', event => {
+      if(!event.target.classList.contains("active_filter")) {
+        let portfolioPictures = [...portfolio_containerOfItems.querySelectorAll(".portfolio_picture")];
+        portfolioPictures.push(portfolioPictures.shift());
+        portfolioPictures.forEach( picture => portfolio_containerOfItems.append(picture) );
+      }
+
+      portfolio_filterTags.querySelectorAll("button").forEach(item =>{
+        item.classList.remove('active_filter')
+      });
+      event.target.classList.add('active_filter');
+    })
   })
 }
 
@@ -199,11 +207,6 @@ const getQuote_modal = () => {
   });
 }
 
-
-const slider_arrows = document.querySelectorAll(".slider .arrow");
-
-const portfolio_containerOfItems = document.querySelector('.portfolio__works');
-const portfolio_filterTags = document.getElementById('filter');
 
 navigation();
 switchSlide();
