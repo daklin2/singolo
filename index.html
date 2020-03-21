@@ -32,22 +32,30 @@
   </div>
 </header>
 <main>
-  <section id="home" class="slider" data-anchor="js-home">
-    <div class="wrapper">
-      <div class="arrow prev"><span class="iblue"></span><span class="iblue"></span></div>
-      <div class="arrow next"><span></span><span></span></div>
-      <div id="phones" class="phones">
-        <div class="phone phone_vertical">
-          <div class="phone__screen"></div>
-          <div class="phone__case"></div>
-          <div class="phone__shadow"></div>
+  <section id="home" class="slider"  data-anchor="js-home">
+      <div class="item-container" id='slides'>
+        <div class="slide slide_1 slide_item active_slide">
+          <div class="wrapper phones">
+            <div class="phone phone_vertical">
+              <div class="phone__screen"></div>
+              <div class="phone__case"></div>
+              <div class="phone__shadow"></div>
+            </div>
+            <div class="phone phone_horizontal">
+              <div class="phone__screen"></div>
+              <div class="phone__case"></div>
+              <div class="phone__shadow"></div>
+            </div>
+          </div>
         </div>
-        <div class="phone phone_horizontal">
-          <div class="phone__screen"></div>
-          <div class="phone__case"></div>
-          <div class="phone__shadow"></div>
+        <div class="slide slide_2 blue slide_item">
+          <div class="wrapper phones">
+            <img class="blue" src="./assets/slider/2-phones.png">
+          </div>
         </div>
       </div>
+      <div class="arrow left"><span></span><span></span></div>
+      <div class="arrow right"><span></span><span></span></div>
     </div>
   </section>
 

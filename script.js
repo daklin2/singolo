@@ -1,3 +1,45 @@
+class Slider {
+  constructor(section) {
+    this.items = section.querySelectorAll('.slide_item');
+    this.currentItem = 0;
+    this.isEnable = true;
+  }
+
+  changeCurrentItem(i) {
+    this.currentItem = (i + this.items.length) % this.items.length;
+  }
+
+  hideItem(direct) {
+    this.isEnable = false;
+    this.items[this.currentItem].classList.add(direct);
+    this.items[this.currentItem].addEventListener('animationend', event => {
+      event.target.classList.remove('active_slide', direct);
+    })
+  }
+
+  showItem(direct) {
+    this.items[this.currentItem].classList.add('next', direct);
+    this.items[this.currentItem].addEventListener('animationend', event => {
+      event.target.classList.remove('next', direct);
+      event.target.classList.add('active_slide');
+      this.isEnable = true;
+    })
+  }
+
+  prevItem(i) {
+    this.hideItem('to_right');
+    this.changeCurrentItem(i - 1);
+    this.showItem('from_left');
+  }
+
+  nextItem(i) {
+    this.hideItem('to_left');
+    this.changeCurrentItem(i + 1);
+    this.showItem('from_right');
+  }
+}
+
+
 class Modal {
   constructor (modal, form, mess) {
     this.modal = modal;
@@ -57,35 +99,30 @@ const navigation = () => {
 
 
 const switchSlide = () => {
-  const slider_slidesBgcolor = {
+  const slider_fullSection = document.querySelector(".slider");
+  const slider = new Slider(slider_fullSection);
+  const slider_arrowBgcolor = {
     0: "red",
     1: "blue"
   }
-  const slider_slidesPattern = {
-    0: [`<div class="phone phone_vertical">
-          <div class="phone__screen"></div>
-          <div class="phone__case"></div>
-          <div class="phone__shadow"></div>
-        </div>
-        <div class="phone phone_horizontal">
-          <div class="phone__screen"></div>
-          <div class="phone__case"></div>
-          <div class="phone__shadow"></div>
-        </div>`],
-    1: [`<img width="517" height="513" style="padding: 46px 260px;" src="./assets/slider/2-phones.png" alt="Phone Vertical">`]
-  };
 
-  let currentSlide = 0;
-  slider_arrows.forEach( arrow => arrow.addEventListener("click", event => {
-    (currentSlide === 1) ? currentSlide-- : currentSlide++;
-    slider_fullSection.classList.value = "slider";
-    slider_fullSection.classList.add(slider_slidesBgcolor[currentSlide]);
+  slider_fullSection.querySelector('.right').addEventListener('click', () => {
+    if (slider.isEnable) {
+      slider.prevItem(slider.currentItem)
+      slider_arrows.forEach(arrow => arrow.querySelectorAll('span').forEach(el => {
+        el.classList.value = 'arrow_' + slider_arrowBgcolor[slider.currentItem]
+      }));//add color class
+    }
+  });
 
-    slider_slideContainer.innerHTML = slider_slidesPattern[currentSlide];
-
-    slider_arrows.forEach(arrow => arrow.querySelectorAll('span').forEach(el => el.classList.value = 'arrow_' + slider_slidesBgcolor[currentSlide]));//add color class
-    switchScreen();
-  }));
+  slider_fullSection.querySelector('.left').addEventListener('click', () => {
+    if (slider.isEnable) {
+      slider.nextItem(slider.currentItem)
+      slider_arrows.forEach(arrow => arrow.querySelectorAll('span').forEach(el => {
+        el.classList.value = 'arrow_' + slider_arrowBgcolor[slider.currentItem]
+      }));//add color class
+    }
+  });
 }
 
 
@@ -151,21 +188,17 @@ const getQuote_modal = () => {
 }
 
 
-const slider_fullSection = document.querySelector(".slider");
-const slider_slideContainer = document.querySelector(".phones");
-
 const slider_arrows = document.querySelectorAll(".slider .arrow");
-const portfolio_containerOfItems = document.querySelector('.portfolio__works');
 
+const portfolio_containerOfItems = document.querySelector('.portfolio__works');
 const portfolio_filterTags = document.getElementById('filter');
 
 navigation();
-switchScreen();
 switchSlide();
+switchScreen();
 switchTags();
 tagClick();
 getQuote_modal();
-
 
 
 
