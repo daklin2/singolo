@@ -151,10 +151,8 @@ const switchScreen = () => {
 }
 
 
-const switchTags = () => {
-  const portfolio_containerOfItems = document.querySelector('.portfolio__works');
+const portfolioSwitchTags = () => {
   const portfolio_filterTags = document.getElementById('filter');
-
   portfolio_filterTags.querySelectorAll("button").forEach(button => {
     button.addEventListener('click', event => {
       if(!event.target.classList.contains("active_filter")) {
@@ -172,7 +170,7 @@ const switchTags = () => {
 }
 
 
-const tagClick = () => {
+const portfolioItemClick = () => {
   const portfolio_items = portfolio_containerOfItems.querySelectorAll("li");
   portfolio_items.forEach(el => el.addEventListener('click', event => {
     if(event.target.classList.contains('active_item')) event.target.classList.remove('active_item')
@@ -208,10 +206,13 @@ const getQuote_modal = () => {
 }
 
 
+const portfolio_containerOfItems = document.querySelector('.portfolio__works');
+
+
 navigation();
 switchSlide();
 switchScreen();
-switchTags();
-tagClick();
+portfolioSwitchTags();
+portfolioItemClick();
 getQuote_modal();
 
