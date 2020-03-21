@@ -8,6 +8,13 @@
   <title>Singolo</title>
 </head>
 <body>
+<div class="modal hidden">
+  <div class="modal_message">
+    Test
+  </div>
+  <div class="modal_background"></div>
+</div>
+
 <header>
   <div class="content">
     <div class="wrapper">
@@ -27,7 +34,7 @@
 <main>
   <section id="home" class="slider" data-anchor="js-home">
     <div class="wrapper">
-      <div class="arrow prev"><span></span><span></span></div>
+      <div class="arrow prev"><span class="iblue"></span><span class="iblue"></span></div>
       <div class="arrow next"><span></span><span></span></div>
       <div id="phones" class="phones">
         <div class="phone phone_vertical">
@@ -230,7 +237,7 @@
             <input class="input-text" type="text" name="name" placeholder="Name (Required)" required>
             <input class="input-text" type="email" name="email" placeholder="Email (Required)" required>
             <input class="input-text" type="text" name="subject" placeholder="Subject">
-            <textarea class="input-text textarea" name="details" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+            <textarea class="input-text textarea" name="description" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
             <button class="submit" type="submit">Send</button>
           </form>
           <div class="contact-information">
