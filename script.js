@@ -58,7 +58,7 @@ class Modal {
   formValue (obj) {
     let value = this.form.querySelector(obj['node']).value;
     value = (value === "") ? obj['defaultValue'] : value;
-    return `<p>${obj['fieldName']}: ${value}</p>`;
+    return `<p>${obj['fieldName']}: ${value.toString()}</p>`;
   }
 
   init (message) {
