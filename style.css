@@ -64,7 +64,7 @@
 }
 
 body {
-  min-width: 1020px;
+
 }
 
 section {
@@ -879,13 +879,14 @@ main .getQuote .formSubmit .submit:hover {
 }
 
 footer .footer {
-  background-color: #2d303a;
   height: 76px;
+  width: 100vw;
+  background-color: #2d303a;
 }
 
 footer .footer .contain{
   max-width: 940px;
-  padding: 22px 0 0 40px;
+  padding: 0 40px 0 40px;
   align-items: center;
   height: 100%;
 }
@@ -1123,5 +1124,10 @@ footer .social li a:hover svg {
 
   main .getQuote .formSubmit .contact-information .description {
     padding-right: 36px;
+  }
+
+  footer .footer .contain {
+    max-width: 940px;
+    align-items: center;
   }
 }
