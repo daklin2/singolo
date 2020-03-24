@@ -722,7 +722,6 @@ main .getQuote .header h2 {
 }
 
 main .getQuote .header p {
-  width: 940px;
   font-family: "lato-light";
   font-size: 18px;
   word-spacing: -1.4px;
@@ -734,7 +733,6 @@ main .getQuote .header p {
 
 main .getQuote .formSubmit {
   margin-top: 44px;
-  max-width: 940px;
 }
 
 main .getQuote .formSubmit .form {
@@ -774,9 +772,8 @@ main .getQuote .formSubmit .input-text:focus {
 }
 
 main .getQuote .formSubmit .textarea {
-  min-height: 202px;
+  height: 202px;
   padding-top: 12px;
-
 }
 
 main .getQuote .formSubmit .input-text::placeholder {
@@ -970,7 +967,7 @@ footer .social li a:hover svg {
 
 @media (min-width: 768px) and (max-width: 1019px) {
   .contain {
-    padding-right: 56px !important;
+     /*!important;*/
   }
 
   /*slider*/
@@ -1023,8 +1020,9 @@ footer .social li a:hover svg {
   }
 
   main .services .contain {
-    padding-left: 40px;
     padding-top: calc(100vW*0.04);
+    padding-right: 56px;
+    padding-left: 40px;
   }
 
   main .services .advantages {
@@ -1067,7 +1065,7 @@ footer .social li a:hover svg {
   }
 
   main .aboutUs .contain {
-    padding: 57px 0 0 40px;
+    padding: 57px 56px 0 40px;
   }
 
   main .aboutUs .contain .people {
@@ -1083,5 +1081,47 @@ footer .social li a:hover svg {
   main .aboutUs .contain .people .person img {
     width: calc(100vw*0.285);
     height: calc(100vw*0.285);
+  }
+
+  /*aboutUs*/
+
+  main .getQuote {
+    height: calc(100vw*0.814);
+  }
+
+  main .getQuote .contain {
+    padding: 53px 0 0 42px;
+  }
+
+  main .getQuote .header {
+    margin-right: 56px;
+  }
+
+  main .getQuote .formSubmit {
+    margin-top: 25px;
+  }
+
+  main .getQuote .formSubmit .form {
+    width: calc(100vw*0.571);
+  }
+
+  main .getQuote .formSubmit .input-text {
+    font-family: 'lato-regular';
+    height: calc(100vw*0.05);
+    margin-bottom: 12px;
+    padding-left: 15px;
+  }
+
+  main .getQuote .formSubmit .textarea {
+    height: calc(100vw*0.207);
+    padding-top: 11px;
+  }
+
+  main .getQuote .formSubmit .contact-information {
+    width: 35.5%;
+  }
+
+  main .getQuote .formSubmit .contact-information .description {
+    padding-right: 36px;
   }
 }
