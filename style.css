@@ -89,6 +89,7 @@ section:before {
 
 .wrapper {
   position: relative;
+  height: 100%;
   max-width: 1020px;
   padding: 0 0px;
   margin: 0 auto;
@@ -96,6 +97,7 @@ section:before {
 }
 
 .contain {
+  height: 100%;
   max-width: 940px;
 }
 
@@ -602,7 +604,6 @@ main .aboutUs .contain .header h2 {
 }
 
 main .aboutUs .contain .header p {
-  width: 940px;
   font-family: "lato-light";
   font-size: 18px;
   word-spacing: -1.4px;
@@ -611,7 +612,8 @@ main .aboutUs .contain .header p {
 }
 
 main .aboutUs .contain .people {
-  width: 940px;
+  height: inherit;
+  max-width: 940px;
   margin-top: 34px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -967,6 +969,12 @@ footer .social li a:hover svg {
 
 
 @media (min-width: 768px) and (max-width: 1019px) {
+  .contain {
+    padding-right: 56px !important;
+  }
+
+  /*slider*/
+
   main .slider .arrow {
     top: calc(100vw*0.283);
   }
@@ -1050,5 +1058,30 @@ footer .social li a:hover svg {
   main .portfolio .contain ul li img {
     width: calc(100vw*0.281);
     height: calc(100vw*0.238);
+  }
+
+  /*aboutUs*/
+
+  main .aboutUs {
+    height: calc(100vw*0.866);
+  }
+
+  main .aboutUs .contain {
+    padding: 57px 0 0 40px;
+  }
+
+  main .aboutUs .contain .people {
+    margin-left: 2px;
+    margin-top: 27px;
+    gap: 14px;
+  }
+
+  main .aboutUs .contain .people .person {
+    height: 54%;
+  }
+
+  main .aboutUs .contain .people .person img {
+    width: calc(100vw*0.285);
+    height: calc(100vw*0.285);
   }
 }
