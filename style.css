@@ -435,6 +435,7 @@ main .services .advantages {
   column-gap: 18px;
   row-gap: 33px;
   list-style: none;
+  transition: 0.5s;
 }
 
 main .services .advantages .item {
@@ -561,7 +562,6 @@ main .portfolio .contain .filter button:nth-child(4) {
 main .portfolio .contain ul {
   width: 944px;
   height: 601px;
-  padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -569,7 +569,7 @@ main .portfolio .contain ul {
   overflow: hidden;
   gap: 16px;
   margin-top: 19px;
-  max-height: 604px;
+  transition: 0.5s;
 }
 
 main .portfolio ul li picture img:hover {
@@ -1026,5 +1026,29 @@ footer .social li a:hover svg {
     grid-template-columns: 1fr 1fr;
     column-gap: calc(100vw*0.07);
     row-gap: calc(100vw*0.07);
+  }
+
+  /*portfolio*/
+
+  main .portfolio {
+    height: calc(100vw*1.424);
+  }
+
+  main .portfolio .contain .header {
+    padding-bottom: 41px;
+    line-height: 30px;
+  }
+
+  main .portfolio .contain ul {
+    width: calc(100vw * 0.9);
+    height: calc(100vw*1.038);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 29px;
+  }
+
+  main .portfolio .contain ul li img {
+    width: calc(100vw*0.281);
+    height: calc(100vw*0.238);
   }
 }
