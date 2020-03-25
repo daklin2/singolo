@@ -620,7 +620,7 @@ main .aboutUs .contain .header p {
 }
 
 main .aboutUs .contain .people {
-  height: inherit;
+  /*height: inherit;*/
   max-width: 940px;
   margin-top: 34px;
   display: grid;
@@ -668,6 +668,7 @@ main .aboutUs .contain .people .person:nth-child(3) .name {
 }
 
 main .aboutUs .contain .people .person .description {
+  max-width: 400px;
   font-family: "lato-regular";
   text-align: justify;
   font-size: 12px;
@@ -1146,6 +1147,7 @@ footer .social li a:hover svg {
 @media (min-width: 375px) and (max-width: 767px) {
   header {
     height: calc(100vw * 0.174);
+    max-height: 89px;
   }
 
   header .logo {
@@ -1263,7 +1265,8 @@ footer .social li a:hover svg {
 
   /*services*/
   main .services {
-    height: calc(100vw*2.735);
+    height: calc(100vw*1.65);
+    min-height: 1026px;
   }
 
   main .services .contain {
@@ -1284,10 +1287,19 @@ footer .social li a:hover svg {
     row-gap: calc(100vw*0.08);
   }
 
+  main .services .advantages .item {
+    justify-content: normal;
+  }
+
+  main .services .advantages .item picture {
+    padding-right: 20px;
+  }
+
   /*portfolio*/
 
   main .portfolio {
     height: calc(100vw*2.236);
+    max-height: 1300px;
   }
 
   main .portfolio .contain {
@@ -1300,7 +1312,9 @@ footer .social li a:hover svg {
 
   main .portfolio .contain ul {
     width: calc(100vw * 0.84);
-    height: calc(100vw*1.475);
+    height: calc(100vw*1.44);
+    min-height: 553px;
+    max-height: 1080px;
     gap: 11px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -1315,72 +1329,103 @@ footer .social li a:hover svg {
   /*aboutUs*/
 
   main .aboutUs {
-    height: calc(100vw*0.866);
+    height: 1748px;;
   }
 
   main .aboutUs .contain {
-    padding: 57px 56px 0 40px;
+    padding: 36px 56px 0 30px;
+  }
+
+  main .aboutUs .contain .header {
+    padding-bottom: 27px;
+  }
+
+  main .aboutUs .contain .header p {
+    letter-spacing: -1px;
   }
 
   main .aboutUs .contain .people {
     margin-left: 2px;
     margin-top: 27px;
-    gap: 14px;
+    grid-template-columns: 1fr;
+    gap: 31px;
   }
 
   main .aboutUs .contain .people .person {
-    height: 54%;
+    justify-self: center;
   }
 
   main .aboutUs .contain .people .person img {
-    width: calc(100vw*0.285);
-    height: calc(100vw*0.285);
+    width: calc(100vw*0.834);
+    height: calc(100vw*0.836);
+    max-width: 400px;
+    max-height: 320px;
   }
 
-  /*aboutUs*/
+  /*GetQuote*/
 
   main .getQuote {
-    height: calc(100vw*0.814);
+    height: 963px;
   }
 
   main .getQuote .contain {
-    padding: 53px 0 0 42px;
+    padding: 44px 30px 0 30px;
   }
 
   main .getQuote .header {
-    margin-right: 56px;
+    margin-right: 12px;
+  }
+
+  main .getQuote .header p {
+    letter-spacing: -0.4px;
   }
 
   main .getQuote .formSubmit {
-    margin-top: 25px;
+    margin-top: 53px;
+    flex-direction: column;
   }
 
   main .getQuote .formSubmit .form {
-    width: calc(100vw*0.571);
+    width: 100%;
   }
 
   main .getQuote .formSubmit .input-text {
-    height: calc(100vw*0.05);
     margin-bottom: 12px;
     padding-left: 15px;
   }
 
   main .getQuote .formSubmit .textarea {
-    height: calc(100vw*0.207);
+    height: calc(100vw*0.423);
     padding-top: 11px;
   }
 
-  main .getQuote .formSubmit .contact-information {
-    width: 35.5%;
+  main .getQuote .formSubmit .submit {
+    height: 53px;
+    width: 100%;
   }
 
-  main .getQuote .formSubmit .contact-information .description {
-    padding-right: 36px;
+  main .getQuote .formSubmit .contact-information {
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  main .getQuote .formSubmit .contact-information .header {
+    margin-bottom: 2px;
+  }
+
+  /*footer*/
+  footer .footer .copyright {
+    display: none;
   }
 
   footer .footer .contain {
     max-width: 940px;
     align-items: center;
+    justify-content: space-around;
+  }
+
+  footer .footer .social {
+    margin: 0;
   }
 }
 
