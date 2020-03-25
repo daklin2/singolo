@@ -63,10 +63,6 @@
   padding: 0;
 }
 
-body {
-
-}
-
 section {
   position: relative;
   width: 100vw;
@@ -91,7 +87,7 @@ section:before {
   position: relative;
   height: 100%;
   max-width: 1020px;
-  padding: 0 0px;
+  padding: 0 0;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -147,6 +143,19 @@ header nav {
   float: right;
 }
 
+header nav input {
+  display: none;
+}
+
+header nav label {
+  display: none;
+}
+
+header nav .menu__box .logo{
+  display: none;
+}
+
+
 header nav ul {
   list-style: none;
   display: flex;
@@ -164,7 +173,7 @@ header nav ul .el:not(:last-child)::after {
   display: block;
   position: absolute;
   right: -16px;
-  top: 0px;
+  top: 0;
   color: #494e62;
 }
 
@@ -194,7 +203,7 @@ header .bottom-line {
   height: 7px;
   width: 100%;
   background-color: #424657;
-  bottom: 0px;
+  bottom: 0;
 }
 
 
@@ -385,7 +394,7 @@ main .slider .slide_1 .phones .phone__screen {
 
 main .slider .slide_1 .phones .phone_horizontal {
   position: absolute;
-  margin: 53px 258px 0px 0px;
+  margin: 53px 258px 0 0;
   right: 0;
   transform: rotate(90deg);
 }
@@ -477,7 +486,7 @@ main .services .bottom-line {
   height: 7px;
   width: inherit;
   background-color: #ffffff;
-  bottom: 0px;
+  bottom: 0;
 }
 
 /*Portfolio*/
@@ -762,13 +771,13 @@ main .getQuote .formSubmit .input-text {
 
 main .getQuote .formSubmit .input-text:hover, .input-text:focus {
   background-color: #bd4c46;
-  box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.39);
+  box-shadow: 0 0 7px -1px rgba(0,0,0,0.39);
 }
 
 main .getQuote .formSubmit .input-text:focus {
   color: #000000;
   background-color: #ffffff;
-  box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.29);
+  box-shadow: 0 0 7px -1px rgba(0,0,0,0.29);
 }
 
 main .getQuote .formSubmit .textarea {
@@ -875,7 +884,7 @@ main .getQuote .formSubmit .submit {
 
 main .getQuote .formSubmit .submit:hover {
   background-color: #bd4c46;
-  box-shadow: 0px 0px 7px -1px rgba(0,0,0,0.29);
+  box-shadow: 0 0 7px -1px rgba(0,0,0,0.29);
 }
 
 footer .footer {
@@ -1107,7 +1116,6 @@ footer .social li a:hover svg {
   }
 
   main .getQuote .formSubmit .input-text {
-    font-family: 'lato-regular';
     height: calc(100vw*0.05);
     margin-bottom: 12px;
     padding-left: 15px;
@@ -1131,3 +1139,114 @@ footer .social li a:hover svg {
     align-items: center;
   }
 }
+
+
+
+@media (min-width: 375px) and (max-width: 767px) {
+  header {
+    height: calc(100vw * 0.174);
+  }
+
+  header .logo {
+    font-size: 19px;
+    padding: 25px 0 0 calc(100vw*0.394);
+  }
+
+  nav {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+  }
+
+  header nav input {
+    display: block
+  }
+
+  header nav label {
+    display: block;
+  }
+
+  header nav #menu__toggle {
+    opacity: 0;
+  }
+
+  header nav #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(90deg);
+  }
+
+  header nav #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  header nav .menu__btn {
+    position: fixed;
+    width: 23px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  header nav .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    transition-duration: .25s;
+  }
+
+  header nav .menu__btn > span::before {
+    content: '';
+    top: -9px;
+    left: -1px;
+  }
+
+  header nav .menu__btn > span::after {
+    content: '';
+    top: 8px;
+    left: -1px;
+  }
+
+  header nav .menu__box {
+    top: 0;
+    left: -100%;
+    width: 74vw;
+    height: 100vh;
+    display: block;
+    position: fixed;
+    list-style: none;
+    background-color: #2d303a;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+    visibility: hidden;
+  }
+
+  header nav .menu__box .logo {
+    display: block;
+    position: absolute;
+    left: 70px;
+    padding-left: 0;
+  }
+
+  header nav .menu__box .items {
+    display: block;
+    margin: 178px 0 0 48px;
+  }
+
+  header nav ul .el:not(:last-child)::after {
+    display: none;
+  }
+
+  header nav .items .menu__item {
+    padding: 14.5px 24px;
+    font-size: 23px;
+    font-stretch: 57px;
+    font-weight: 600;
+    transition-duration: .25s;
+  }
+}
+
+
