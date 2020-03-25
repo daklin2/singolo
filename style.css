@@ -974,12 +974,44 @@ footer .social li a:hover svg {
   animation-name: right;
 }
 
-
-@media (min-width: 768px) and (max-width: 1019px) {
-  .contain {
-     /*!important;*/
+@media (min-width: 375px) and (max-width: 1019px) {
+  main .slider .slide_1 .phones .phone {
+    width: calc(100vw*0.211);
+    height: calc(100vw*0.448);
   }
 
+  main .slider .slide_1 .phones .phone_vertical {
+    margin-left: calc(100vw*0.11);
+    margin-top: calc(100vw*0.053);
+  }
+
+  main .slider .slide_1 .phones .phone_horizontal {
+    margin-top: calc(100vw*0.052);
+    margin-right: calc(100vw*0.255);
+  }
+
+  main .slider .slide_1 .phones .phone__screen {
+    top: calc(100vw*0.064);
+    left: calc(100vw*0.013);
+    width: calc(100vw*0.185);
+    height: calc(100vw*0.325);
+  }
+
+  main .slider .slide_1 .phones .phone__shadow {
+    width: calc(100vw*0.236);
+    height: calc(100vw*0.5);
+  }
+
+  main .slider .slide_1 .phones .phone_horizontal .phone__shadow {
+    top: calc(100vw*(-0.026));
+  }
+
+  main .slider .slide_2 img {
+    height: -webkit-fill-available;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1019px) {
   /*slider*/
 
   main .slider .arrow {
@@ -991,36 +1023,6 @@ footer .social li a:hover svg {
   }
   main .slider .right {
     right: calc(100vw*0.036);
-  }
-
-  main .slider .slide_1 .phones .phone {
-    width: calc(100vw*0.211);
-    height: calc(100vw*0.448);
-  }
-
-  main .slider .slide_1 .phones .phone_horizontal {
-    margin: 42px 195px 0px 0px;
-  }
-
-  main .slider .slide_1 .phones .phone_vertical {
-    margin-left: 84px;
-    margin-top: 41px;
-  }
-
-  main .slider .slide_1 .phones .phone__screen {
-    top: calc(100vw*0.064);
-    left: 10px;
-    width: calc(100vw*0.185);
-    height: calc(100vw*0.325);
-  }
-
-  main .slider .slide_1 .phones .phone__shadow {
-    width: calc(100vw*0.236);
-    height: calc(100vw*0.5);
-  }
-
-  main .slider .slide_2 img {
-    height: -webkit-fill-available;
   }
 
   /*services*/
@@ -1246,6 +1248,18 @@ footer .social li a:hover svg {
     font-stretch: 57px;
     font-weight: 600;
     transition-duration: .25s;
+  }
+
+  /*slider*/
+  main .slider .arrow {
+    top: calc(100vw*0.272);
+  }
+
+  main .slider .left {
+    left: calc(100vw*0.019);
+  }
+  main .slider .right {
+    right: calc(100vw*0.03);
   }
 }
 
