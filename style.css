@@ -520,7 +520,6 @@ main .portfolio .contain .header h2 {
 }
 
 main .portfolio .contain .header p {
-  width: 700px;
   font-family: "lato-light";
   font-size: 18px;
   letter-spacing: -0.21px;
@@ -1260,6 +1259,128 @@ footer .social li a:hover svg {
   }
   main .slider .right {
     right: calc(100vw*0.03);
+  }
+
+  /*services*/
+  main .services {
+    height: calc(100vw*2.735);
+  }
+
+  main .services .contain {
+    padding-top: calc(100vW*0.06);
+    padding-right: 56px;
+    padding-left: 32px;
+  }
+
+  main .services .header p {
+    letter-spacing: -0.5px;
+  }
+
+  main .services .advantages {
+    width: calc(100vw*0.85);
+    padding: 32px 0 0 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: calc(100vw*0.08);
+  }
+
+  /*portfolio*/
+
+  main .portfolio {
+    height: calc(100vw*2.236);
+  }
+
+  main .portfolio .contain {
+    padding: 46px 10px 0 30px;
+  }
+
+  main .portfolio .contain .header {
+    padding-bottom: 15px;
+  }
+
+  main .portfolio .contain ul {
+    width: calc(100vw * 0.84);
+    height: calc(100vw*1.475);
+    gap: 11px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-top: 25px;
+  }
+
+  main .portfolio .contain ul li img {
+    width: calc(100vw*0.4);
+    height: calc(100vw*0.34);
+  }
+
+  /*aboutUs*/
+
+  main .aboutUs {
+    height: calc(100vw*0.866);
+  }
+
+  main .aboutUs .contain {
+    padding: 57px 56px 0 40px;
+  }
+
+  main .aboutUs .contain .people {
+    margin-left: 2px;
+    margin-top: 27px;
+    gap: 14px;
+  }
+
+  main .aboutUs .contain .people .person {
+    height: 54%;
+  }
+
+  main .aboutUs .contain .people .person img {
+    width: calc(100vw*0.285);
+    height: calc(100vw*0.285);
+  }
+
+  /*aboutUs*/
+
+  main .getQuote {
+    height: calc(100vw*0.814);
+  }
+
+  main .getQuote .contain {
+    padding: 53px 0 0 42px;
+  }
+
+  main .getQuote .header {
+    margin-right: 56px;
+  }
+
+  main .getQuote .formSubmit {
+    margin-top: 25px;
+  }
+
+  main .getQuote .formSubmit .form {
+    width: calc(100vw*0.571);
+  }
+
+  main .getQuote .formSubmit .input-text {
+    height: calc(100vw*0.05);
+    margin-bottom: 12px;
+    padding-left: 15px;
+  }
+
+  main .getQuote .formSubmit .textarea {
+    height: calc(100vw*0.207);
+    padding-top: 11px;
+  }
+
+  main .getQuote .formSubmit .contact-information {
+    width: 35.5%;
+  }
+
+  main .getQuote .formSubmit .contact-information .description {
+    padding-right: 36px;
+  }
+
+  footer .footer .contain {
+    max-width: 940px;
+    align-items: center;
   }
 }
 
