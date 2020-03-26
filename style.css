@@ -95,12 +95,13 @@ section {
   background-clip: content-box;
   min-width: 320px;
 }
-section:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-}
+
+/*section:before {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  left: 0;*/
+/*  right: 0;*/
+/*}*/
 
 .active_nav {
   color: #ea676b !important;
