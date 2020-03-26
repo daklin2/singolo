@@ -693,6 +693,7 @@ main .aboutUs .contain .people .person .social {
   grid-template-rows: 32px;
   grid-gap: 8px;
   list-style: none;
+  z-index: 1;
 }
 main .aboutUs .contain .people .person:last-child .social {
   padding: 0;
