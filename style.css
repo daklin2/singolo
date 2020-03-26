@@ -245,7 +245,7 @@ main .slider .item-container {
 
 main .slider .slide {
   width: 100%;
-  height: inherit;
+  height: -webkit-fill-available;
   position: absolute;
 }
 
@@ -464,7 +464,6 @@ main .services .advantages .item {
 }
 
 main .services .advantages .item picture img {
-
   padding-right: 20px;
   padding-top: 4px;
   width: 60px;
