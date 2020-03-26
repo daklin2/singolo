@@ -204,6 +204,10 @@ const getQuote_modal = () => {
       modal.close();
     }
   });
+  modal_container.querySelector('.modal_submit').addEventListener('click', () => {
+    modal.reset();
+    modal.close();
+  })
 }
 
 
