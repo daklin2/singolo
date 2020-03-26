@@ -140,12 +140,13 @@ const switchSlide = () => {
 
 
 const switchScreen = () => {
-  const slider_phones_screen = document.querySelectorAll(".slider .phone__screen");
-  slider_phones_screen.forEach( phone => phone.addEventListener( "click", event => {
-    if ( event.target.classList.contains("hidden") ) {
-      event.target.classList.remove("hidden");
+  const slider_phones = [...document.querySelectorAll(".slider .phone")].reverse();
+  slider_phones.forEach( phone => phone.addEventListener( "click", event => {
+    let phone_screen = event.currentTarget.children[0];
+    if ( phone_screen.classList.contains("hidden") ) {
+      phone_screen.classList.remove("hidden");
     } else {
-      event.target.classList.add("hidden");
+      phone_screen.classList.add("hidden");
     }
   }));
 }
