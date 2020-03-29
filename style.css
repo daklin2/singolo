@@ -398,7 +398,6 @@ main .slider .slide_1 .phones .phone__case {
   left: 0;
   width: inherit;
   height: inherit;
-  cursor: pointer;
   background: url("./assets/slider/1-phone.svg") no-repeat;
   background-size: cover;
   z-index: 1;
@@ -1046,6 +1045,11 @@ footer .social li a:hover svg {
 }
 
 @media (min-width: 768px) and (max-width: 1019px) {
+
+  header nav ul {
+    padding: 40px 41px 0 0;
+  }
+
   /*slider*/
 
   main .slider .arrow {
@@ -1071,9 +1075,13 @@ footer .social li a:hover svg {
     padding-left: 40px;
   }
 
+  main .services .header {
+    margin-top: 8px;
+  }
+
   main .services .advantages {
     width: calc(100vw*0.85);
-    padding: 43px 0 0 1px;
+    padding: 35px 0 0 1px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: calc(100vw*0.07);
@@ -1130,9 +1138,15 @@ footer .social li a:hover svg {
   }
 
   main .aboutUs .contain .people .person .name {
-    margin-top: 8px;
+    margin-top: 12px;
   }
-  /*aboutUs*/
+
+  main .aboutUs .contain .people .person .description {
+    margin-top: 4px;
+    padding-bottom: 12px;
+  }
+
+  /*getQuote*/
 
   main .getQuote {
     height: calc(100vw*0.814);
@@ -1157,7 +1171,7 @@ footer .social li a:hover svg {
   main .getQuote .formSubmit .input-text {
     height: calc(100vw*0.05);
     margin-bottom: 12px;
-    padding-left: 15px;
+    padding-left: 7px;
   }
 
   main .getQuote .formSubmit .textarea {
@@ -1169,7 +1183,12 @@ footer .social li a:hover svg {
     width: 35.5%;
   }
 
+  main .getQuote .formSubmit .contact-information .header {
+    margin-bottom: 3px;
+  }
+
   main .getQuote .formSubmit .contact-information .description {
+    margin-bottom: 37px;
     padding-right: 36px;
   }
 
@@ -1251,6 +1270,10 @@ footer .social li a:hover svg {
     left: -1px;
   }
 
+  header nav ul .el {
+    width: fit-content;
+  }
+
   header nav .menu__box {
     top: 0;
     left: -100%;
@@ -1288,6 +1311,16 @@ footer .social li a:hover svg {
     font-weight: 600;
     transition-duration: .25s;
   }
+
+  header nav .menu__box .menu_background{
+    position: absolute;
+    top: 0;
+    right: -30vw;
+    width: 30vw;
+    height: 100%;
+    background: #0008;
+  }
+
 
   /*slider*/
 
@@ -1388,11 +1421,12 @@ footer .social li a:hover svg {
     margin-left: 2px;
     margin-top: 27px;
     grid-template-columns: 1fr;
-    gap: 31px;
+    gap: 34px;
   }
 
   main .aboutUs .contain .people .person {
     justify-self: center;
+    height: 440px;
   }
 
   main .aboutUs .contain .people .person img {
@@ -1400,8 +1434,17 @@ footer .social li a:hover svg {
     height: calc(100vw*0.836);
     max-width: 400px;
     max-height: 320px;
+    margin-bottom: 7px;
   }
 
+  main .aboutUs .contain .people .person .name {
+    margin: 0;
+  }
+
+  main .aboutUs .contain .people .person .description {
+     margin: 0;
+     padding: 0;
+  }
   /*GetQuote*/
 
   main .getQuote {
@@ -1449,8 +1492,16 @@ footer .social li a:hover svg {
     margin-top: 32px;
   }
 
+  main .getQuote .formSubmit .contact-information .description {
+    margin-bottom: 15px;
+  }
+
   main .getQuote .formSubmit .contact-information .header {
     margin-bottom: 2px;
+  }
+
+  main .getQuote .formSubmit .contact-information .contact {
+    line-height: 15px;
   }
 
   /*footer*/
