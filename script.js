@@ -89,6 +89,7 @@ const navigation = () => {
 
   const anchors_blocks = document.querySelectorAll('section');
   const anchors_links = [...document.querySelectorAll('header a[href*="#"]')]
+  const menu_checkbox = document.querySelector('#menu__toggle');
   let currentNavigationItem;
 
   anchors_links.forEach(anchor => {
@@ -99,7 +100,9 @@ const navigation = () => {
         behavior: 'smooth',
         block: 'start'
       })
-    })
+
+      if (menu_checkbox.checked) menu_checkbox.checked = false;
+    });
   });
 
   checkLocation ();
