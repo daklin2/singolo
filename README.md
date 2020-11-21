@@ -1,13 +1,8 @@
 #### [Deploy](https://daklin2.github.io/singolo/)
+#### [Figma Maket](https://www.figma.com/file/ORM76kEzhnBmTGI5nad8eT/HTML%2BCSS?node-id=0%3A1)
 
-# Instruction 
-## LayOut
-#### [Part 1](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-2/singolo/part-1/singolo-1-ru.md)
-#### [Part 2](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-2/singolo/part-2/singolo-2-ru.md)
-#### [Part 3](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-2/singolo/part-3/singolo-3-ru.md)
+# Description
+#### Ключевым моментом проекта является полное соответствие заданому макету. Это достигается совпадением двух изображений при наложении слоя с картинкой поверх готового решения с помощью браузерного расширения Pixel Perfect.
+#### Реализована адаптивность для экранов начиная от 375px.
+#### Реализация базового взаимодействвия с DOM по средствам чистого js.
 
-### DOM
-#### [Part 1](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-2/singolo/singolo-DOM-ru.md)
-
-### Responsive
-#### [Part 1](https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markups/level-2/singolo/singolo-responsive-ru.md)
